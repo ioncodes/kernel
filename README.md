@@ -3,7 +3,7 @@ Header-only library that assists you with exploiting the Windows kernel
 
 ## Features
 * Exports kernel functions (with almost full support for proper types)
-* Provides a function to steal the SYSTEN token to elevate privileges
+* Provides a function to steal the SYSTEM token to elevate privileges
 * Works safely from kernel context
 
 ## Example
