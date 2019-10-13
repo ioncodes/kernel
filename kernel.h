@@ -293,8 +293,6 @@ bool InitializeKernel()
 			std::cout << "PsLookupProcessByProcessId: 0x" << std::hex << PsLookupProcessByProcessId << std::endl;
 			std::cout << "PsReferencePrimaryToken: 0x" << std::hex << PsReferencePrimaryToken << std::endl;
 #endif
-
-			VirtualFree(modules, NULL, MEM_RELEASE);
 			FreeLibrary(kernel);
 
 			return true;
@@ -305,6 +303,8 @@ bool InitializeKernel()
 			std::cout << "Error loading kernel" << std::endl;
 #endif
 		}
+
+		VirtualFree(modules, NULL, MEM_RELEASE);
 	}
 	else
 	{
