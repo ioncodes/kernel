@@ -291,6 +291,7 @@ bool InitializeKernel()
 			std::cout << "KernelName: " << kernelName << std::endl;
 			std::cout << "NtQuerySystemInformation: 0x" << std::hex << NtQuerySystemInformation << std::endl;
 			std::cout << "PsLookupProcessByProcessId: 0x" << std::hex << PsLookupProcessByProcessId << std::endl;
+			std::cout << "PsReferencePrimaryToken: 0x" << std::hex << PsReferencePrimaryToken << std::endl;
 #endif
 
 			VirtualFree(modules, NULL, MEM_RELEASE);
